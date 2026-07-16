@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-/* Site-specific adjustments */
+/* Full-height page structure */
 
 html,
 body {
@@ -16,6 +16,8 @@ body {
   flex-direction: column;
 }
 
+/* Header adjustments */
+
 header h1 {
   overflow-wrap: anywhere;
 }
@@ -24,11 +26,9 @@ header h2 {
   max-width: 100%;
 }
 
-/*
- * Select the main content container only.
- * The header also contains an element with class="container".
- */
-body > .container {
+/* Main content and sticky footer */
+
+.page-container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ body > .container {
   margin-top: auto;
   padding: 1.5rem 0;
   border-top: 1px dashed #b5e853;
-  text-align: center;
+  text-align: centre;
   font-size: 0.9rem;
 }
 
