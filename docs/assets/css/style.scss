@@ -2,3 +2,20 @@
 ---
 
 @import "{{ site.theme }}";
+
+#main-content {
+  float: none;
+  width: 100%;
+}
+
+/* Prevent long site titles from colliding or overflowing. */
+header h1,
+header h2 {
+  width: auto;
+  max-width: 100%;
+}
+
+header h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  overflow-wrap: anywhere;
+}
