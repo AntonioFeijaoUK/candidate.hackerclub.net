@@ -5,6 +5,17 @@
 
 /* Site-specific adjustments */
 
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header h1 {
   overflow-wrap: anywhere;
 }
@@ -13,12 +24,23 @@ header h2 {
   max-width: 100%;
 }
 
+/*
+ * Select the main content container only.
+ * The header also contains an element with class="container".
+ */
+body > .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 #main_content {
   width: 100%;
+  flex: 1;
 }
 
 .site-footer {
-  margin-top: 3rem;
+  margin-top: auto;
   padding: 1.5rem 0;
   border-top: 1px dashed #b5e853;
   text-align: center;
