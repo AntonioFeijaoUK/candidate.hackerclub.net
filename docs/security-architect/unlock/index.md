@@ -1,31 +1,41 @@
 # Candidate Security Architect
 
-## challenge 2
+## Challenge 2 — AWS Architecture Review
 
-Is there a security weakness in this architecture?
+You have reached a simulated AWS architecture review.
 
-For the next challenge, add the 1 word weakness in the the url (e.g.  https://candidate.hackclub.net/security-architect/unlock/"YOUR_ANSWER"
+Review the architecture below and identify the most significant security weakness.
 
+To reach the next challenge, replace the work `unlock` in the URL with your 1 work answerd
 
-```
-                         Internet
-                            │
-                            ▼
-                    Application Load Balancer
-                            │
-                            ▼
-                EC2 URL Preview Application
-                ┌────────────────────────────┐
-User URL ──────▶│ Fetches user-supplied URLs │
-                │                            │
-                │ Instance profile:          │
-                │ CandidateApplicationRole   │
-                │                            │
-                │ IMDSv1: enabled            │
-                │ IMDSv2: optional           │
-                └─────────────┬──────────────┘
+> e.g.  
+> https://candidate.hackclub.net/security-architect/unlock
+> https://candidate.hackclub.net/security-architect/"YOUR_ANSWER"
+
+---
+
+## Architecture
+
+```text
+                          Internet
                               │
                               ▼
-                       Amazon S3 bucket
+                    Application Load Balancer
+                              │
+                              ▼
+                  EC2 URL Preview Application
+              ┌──────────────────────────────────┐
+              │ Accepts a user-supplied URL      │
+              │ and retrieves its content        │
+              │                                  │
+              │ Instance profile:                │
+              │ CandidateApplicationRole         │
+              │                                  │
+              │ IMDSv1: enabled                  │
+              │ IMDSv2: optional                 │
+              └───────────────┬──────────────────┘
+                              │
+                              ▼
+                     Private Amazon S3 bucket
 ```
 
