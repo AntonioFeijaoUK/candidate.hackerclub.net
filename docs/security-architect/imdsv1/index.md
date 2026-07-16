@@ -20,3 +20,5 @@ Inspect the response and follow the clue contained in the session token.
   "Expiration": "2099-12-31T23:59:59Z"
 }
 ```
+
+🫣 hum... it looks like the clue after this one has been rotated before being packaged for transport...
