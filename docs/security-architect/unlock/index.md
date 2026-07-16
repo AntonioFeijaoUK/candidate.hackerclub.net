@@ -28,25 +28,4 @@ Use lowercase characters in the URL.
 
 ## Architecture
 
-```text
-                          Internet
-                              │
-                              ▼
-                    Application Load Balancer
-                              │
-                              ▼
-                  EC2 URL Preview Application
-              ┌──────────────────────────────────┐
-              │ Accepts a user-supplied URL      │
-              │ and retrieves its content        │
-              │                                  │
-              │ Instance profile:                │
-              │ CandidateApplicationRole         │
-              │                                  │
-              │ IMDSv1: enabled                  │
-              │ IMDSv2: optional                 │
-              └───────────────┬──────────────────┘
-                              │
-                              ▼
-                     Private Amazon S3 bucket
-```
+!["aws-architect-review-weakness"](/assets/images/aws-architect-review-weakness-v01.png)
