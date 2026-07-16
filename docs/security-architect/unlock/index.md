@@ -6,14 +6,23 @@ You have reached a simulated AWS architecture review.
 
 Review the architecture below and identify the most significant security weakness.
 
-For your notes, record the weakness and your recommended remediation.  
-You will submit both at the final stage.
+For your notes, record:
 
-To reach the next challenge, replace the word `unlock` in the URL with your 1 work answer
+- the security weakness;
+- the potential impact;
+- your recommended remediation.
 
-> e.g.  
-> https://candidate.hackclub.net/security-architect/unlock
-> https://candidate.hackclub.net/security-architect/"YOUR_ANSWER"
+You will submit these at the final stage.
+
+To reach the next challenge, replace `unlock` in the current URL with the insecure EC2 metadata-service version shown in the diagram.
+
+Use lowercase characters in the URL.
+
+> Example format:
+>
+> `https://candidate.hackerclub.net/security-architect/unlock/`
+>
+> `https://candidate.hackerclub.net/security-architect/your-answer/`
 
 ---
 
@@ -41,4 +50,3 @@ To reach the next challenge, replace the word `unlock` in the URL with your 1 wo
                               ▼
                      Private Amazon S3 bucket
 ```
-
