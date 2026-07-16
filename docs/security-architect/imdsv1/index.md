@@ -19,3 +19,4 @@ Inspect the response and follow the clue contained in the session token.
   "Token": "NEXT_CLUE=TXT:_security-architect.hackerclub.net",
   "Expiration": "2099-12-31T23:59:59Z"
 }
+```
