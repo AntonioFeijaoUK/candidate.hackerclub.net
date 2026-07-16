@@ -6,7 +6,10 @@ You have reached a simulated AWS architecture review.
 
 Review the architecture below and identify the most significant security weakness.
 
-To reach the next challenge, replace the work `unlock` in the URL with your 1 work answerd
+For your notes, record the weakness and your recommended remediation.  
+You will submit both at the final stage.
+
+To reach the next challenge, replace the word `unlock` in the URL with your 1 work answer
 
 > e.g.  
 > https://candidate.hackclub.net/security-architect/unlock
